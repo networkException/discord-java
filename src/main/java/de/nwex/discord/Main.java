@@ -2,7 +2,6 @@ package de.nwex.discord;
 
 import com.mojang.brigadier.CommandDispatcher;
 import de.nwex.discord.command.Command;
-import de.nwex.discord.config.Reactions;
 import de.nwex.discord.config.Tokens;
 import java.lang.reflect.InvocationTargetException;
 import javax.security.auth.login.LoginException;

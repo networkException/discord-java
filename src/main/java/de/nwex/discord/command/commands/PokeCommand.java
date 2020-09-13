@@ -21,7 +21,6 @@ public class PokeCommand extends Command {
                 .help(true)
                 .then(argument("member", user())
                     .executes(this::executePoke))
-                .executes(this::executeError)
         );
     }
 
