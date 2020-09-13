@@ -24,7 +24,8 @@ public class Main {
         builder.setBulkDeleteSplittingEnabled(false);
         builder.setActivity(Activity.playing("with github.com/networkException/discord-java"));
 
-        Reactions.register();
+        // TODO: Add valid snowflakes to RoleReactions
+        // Reactions.register();
 
         new Reflections("de.nwex.discord.command.commands")
             .getSubTypesOf(Command.class)
@@ -38,7 +39,7 @@ public class Main {
                 }
             });
 
-        new Reflections("de.nwex.discord.listener")
+        new Reflections("de.nwex.discord.listeners")
             .getSubTypesOf(ListenerAdapter.class)
             .forEach(listener -> {
                 try {
